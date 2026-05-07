@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Happy Birthday Trish!</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        background: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%);
+        font-family: "Pacifico", cursive;
+      }
+      .paper {
+        transition: transform 0.3s, box-shadow 0.3s;
+      }
+      .paper.dragging {
+        transition: none;
+      }
+      .paper:hover:not(.dragging) {
+        transform: scale(1.05);
+      }
+      .heart {
+        animation: bounce 2s infinite;
+      }
+      @keyframes bounce {
+        0%,
+        20%,
+        50%,
+        80%,
+        100% {
+          transform: translateY(0);
+        }
+        40% {
+          transform: translateY(-30px);
+        }
+        60% {
+          transform: translateY(-15px);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <audio id="birthdaySong" autoplay loop>
+      <source src="music.mp3" type="audio/mpeg" />
+    </audio>
+
+    <div class="paper heart"></div>
+    <div class="paper image">
+      <div class="img">
+      <img class="tall-image tall-image-5-5" src="trish5_5.jpeg" />
+      <p class="poem">
+        Under the sunlight's warm embrace,She walks with beauty, charm, and
+        grace.Every step, a quiet story,A vision lovely, strong, and steady.
+      </p>
+      </div>
+    </div>
+    
+    <div class="paper image">
+      <img class="tall-image tall-image-4-4" src="trish4_4.jpeg" />
+      <p>Embracing the calm charm of nature's elegance</p>
+    </div>
+    <div class="paper image">
+      <p>uff even nature cant compete🥱</p>
+
+      <img src="trish2.jpeg" />
+      <p>happy birthday Trish❤️</p>
+    </div>
+
+    <div class="paper image">
+      <p>They say beauty lies in the eyes of</p>
+      <p>the beholder,</p>
+
+      <img src="trish1.jpeg" />
+
+      <p>but this one's undeniable</p>
+    </div>
+    <div class="paper image">
+      
+
+      <p>How can someone be this beautiful.......?</p>
+      <img src="trish3_3.jpeg" />
+    </div>
+    <div class="paper red">
+      <p class="p1">I wish you a great day today</p>
+      <p class="p2">and thanks for being a special friend❤️</p>
+    </div>
+    <div class="paper">
+      <p class="p1">Hey Happy Birthday trishu!💗</p>
+      <p class="p1">
+        Dear friend <span style="color: red !important">❤️</span>
+      </p>
+    </div>
+
+    <div class="paper">
+      <p class="p1">Drag the papers to move!</p>
+    </div>
+
+    <script src="s.js"></script>
+  </body>
+</html>
